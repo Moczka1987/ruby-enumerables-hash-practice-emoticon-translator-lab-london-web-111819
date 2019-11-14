@@ -6,6 +6,7 @@ def load_library(file_path)
   
   YAML.load_file(file_path).each do |meaning, describe|
     eng,jpn = describe 
+    emoticon["get_meaning"][jpn] = meaning
     
   
 end
